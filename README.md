@@ -13,17 +13,31 @@
 
 ## Installing - 專案安裝流程
 1. 打開你的終端機 terminal，並 clone 此專案至電腦
-```$ git clone https://github.com/laurajhwu/trash_talk_generator.git```
+```
+$ git clone https://github.com/laurajhwu/trash_talk_generator.git
+```
 2. 安裝 npm 
-```$ npm install```
+```
+$ npm install
+```
 3. 安裝 nodemon
-```$ npm install nodemon```
+```
+$ npm install nodemon
+```
 4. 進入專案資料架
-```$ cd trash_talk_generator```
+```
+$ cd trash_talk_generator
+```
 5. 透過 nodemon 執行專案
-```$ npm run dev```
+```
+$ npm run dev
+```
 6. 專案執行成功 terminal 會顯示：
-```Express app is listening on port 3000```
+```
+Express app is listening on port 3000
+```
 7. 於瀏覽器上輸入網址 URL
-```http://localhost:3000```
+```
+http://localhost:3000
+```
 
