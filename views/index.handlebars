@@ -1,0 +1,61 @@
+<h1 class="text-center mt-5">你想對誰說幹話？</h1>
+
+<form method="POST" action="/">
+    <div class='row row-cols-1 row-cols-md-3 g-1 mt-5'>
+        <div class="col">
+            <section class="card h-100 border-0 options">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+                    class="card-img-top" alt="engineer-image">
+                <div class="card-body d-flex justify-content-center">
+                    <div class="form-check align-self-end fs-5">
+                        <input class="form-check-input" type="radio" name="job" id="engineer" value='engineer' {{#if
+                            selected.engineer}}checked{{/if}}>
+                        <label class="form-check-label ps-1 " for="engineer">
+                            工程師
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="col">
+            <section class="card h-100 border-0 options">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+                    class="card-img-top" alt="designer-image">
+                <div class="card-body d-flex justify-content-center">
+                    <div class="form-check align-self-end fs-5">
+                        <input class="form-check-input" type="radio" name="job" id="designer" value="designer" {{#if
+                            selected.designer}}checked{{/if}}>
+                        <label class="form-check-label ps-1" for="designer">
+                            設計師
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="col">
+            <section class=" h-100 card border-0 options">
+                <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+                    class="card-img-top" alt="founder-image">
+                <div class="card-body d-flex justify-content-center">
+                    <div class="form-check align-self-end fs-5">
+                        <input class="form-check-input" type="radio" name="job" id="entrepreneur" value="entrepreneur"
+                            {{#if selected.entrepreneur}}checked{{/if}}>
+                        <label class="form-check-label ps-1" for="entrepreneur">
+                            創業家
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <section class='row mt-5' id="output">
+        <button type="submit" class="col-2 btn btn-secondary btn-lg h-50" id="btn-submit">產生幹話</button>
+        <div class="col-9 ms-3 border border-secondary" style="height: 200px;">
+            <div class=" alert alert-light" role="alert">
+                {{ trashTalk }}
+            </div>
+        </div>
+    </section>
+</form>
